@@ -11,6 +11,9 @@ for line in sys.stdin:
         calories += int(line)
     else:
         elves.append(calories)
+
         calories = 0
+ordered = sorted(elves)[-3:]
 
 print(f"Maximum calories: {max(elves)}")
+print(f"Sum of first three elves: {sum(ordered)}")
